@@ -1,0 +1,12 @@
+vich_uploader:
+    db_driver: orm
+
+    metadata:
+        type: attribute
+
+    mappings:
+        book:
+            uri_prefix: /images/book
+            upload_destination: '%kernel.project_dir%/public/images/book'
+            namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+    
